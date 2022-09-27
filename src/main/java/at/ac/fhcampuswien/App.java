@@ -9,8 +9,17 @@ public class App {
     public void sayHelloWorld(){
         System.out.println("Hello World!");
     }
-    // "\" -> wird für andere Sachen verwendet z.B.: \n or \r = nextLine, \t = tab
-    // "\\" = "\" in output
+
+    /**
+     * '\n' - neue Zeile
+     * '\r' - Enter
+     * '\t' - Tab
+     * '\b' - Backspace
+     * '\f' - Seitenvorschub
+     * '\' ' - Hochkomma
+     * '\"' - Anführungsstriche
+     * '\\' - Backslash
+     */
     //todo Task 2
     public void helloRobot(){
         System.out.println("0123456789012345678901");
