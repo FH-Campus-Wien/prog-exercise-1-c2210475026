@@ -63,17 +63,17 @@ public class App {
 
         int sum = ci+i+i2+l1i+fi+f2i+di+d2i;
         System.out.println(sum);
-
-
-
-
-
-
     }
 
     //todo Task 4
     public void addTwoNumbers(){
-        // input your solution here
+        Scanner s = new Scanner(System.in);
+        int sum=0;
+        for(int i=0;i<2;i++){
+            sum=sum+s.nextInt();
+        }
+        System.out.println(sum);
+
     }
 
     //todo Task 5
