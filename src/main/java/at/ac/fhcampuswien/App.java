@@ -33,10 +33,42 @@ public class App {
         System.out.println("      _)(  )(_");
         System.out.println("     `---''---`");
     }
-
+    // Informationen zu Literals in Java ->
+    // https://www.straub.as/java/basic/const.html
+    // https://www.geeksforgeeks.org/literals-in-java/
     //todo Task 3
     public void sumOfLiterals(){
-        // input your solution here
+        //char form ''
+        char c='Z';
+        int ci= (int) c;
+        //hexadecimal form 0x....
+        int i=0xface;
+        //octal form literal 0....
+        int i2=012;
+
+        long l1=80L;
+        int l1i= (int) l1;
+
+        float f=44e-1f;
+        int fi=(int) f;
+
+        float f2=5.5f;
+        int f2i=(int) f2;
+
+        double d=8.88e1;
+        int di=(int) d;
+
+        double d2=99.9;
+        int d2i=(int) d2;
+
+        int sum = ci+i+i2+l1i+fi+f2i+di+d2i;
+        System.out.println(sum);
+
+
+
+
+
+
     }
 
     //todo Task 4
