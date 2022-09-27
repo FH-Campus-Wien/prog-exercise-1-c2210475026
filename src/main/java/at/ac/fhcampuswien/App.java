@@ -124,13 +124,17 @@ public class App {
         int i = scanner.nextInt();
         if(i<0 || i>=100000){
             System.out.println("Invalid Revenue");
-        } else if (i >= 0 && i < 20000) {
+        }
+        if (i >= 0 && i < 20000) {
             System.out.println("Poor Sales Revenue");
-        } else if(i>=20000 && i<50000){
+        }
+        if(i>=20000 && i<50000){
             System.out.println("Average Sales Revenue");
-        } else if(i>=50000 && i<80000){
+        }
+        if(i>=50000 && i<80000){
             System.out.println("Good Sales Revenue");
-        } else if(i>=80000 && i<10000){
+        }
+        if(i>=80000 && i<100000){
             System.out.println("Excellent Sales Revenue");
         }
     }
