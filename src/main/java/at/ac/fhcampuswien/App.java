@@ -102,7 +102,20 @@ public class App {
 
     //todo Task 6
     public void compareTwoNumbers(){
-        // input your solution here
+        Scanner scanner = new Scanner(System.in);
+        int n1 = scanner.nextInt();
+        int n2 = scanner.nextInt();
+        System.out.println("n1: "+n1);
+        System.out.println("n2: "+n2);
+        if(n1>n2){
+            System.out.println("n1 > n2");
+        }
+        if(n1<n2){
+            System.out.println("n1 < n2");
+        }
+        if(n1==n2){
+            System.out.println("n1 == n2");
+        }
     }
 
     //todo Task 7
