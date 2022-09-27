@@ -10,7 +10,7 @@ public class App {
         System.out.println("Hello World!");
     }
 
-    /**
+    /*
      * '\n' - neue Zeile
      * '\r' - Enter
      * '\t' - Tab
@@ -87,13 +87,13 @@ public class App {
         x=x+y;
         y=x-y;
         x=x-y;
-        /**
-         * zum Verständnis:
-         * x=9,y=4
-         * x=9+4=13
-         * y=13-4=9
-         * x=13-9=4
-         * x=4,y=9
+        /*
+          zum Verständnis:
+          x=9,y=4
+          x=9+4=13
+          y=13-4=9
+          x=13-9=4
+          x=4,y=9
          */
         System.out.println("After Swap:");
         System.out.println("x: "+x);
