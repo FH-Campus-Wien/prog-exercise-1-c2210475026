@@ -79,11 +79,11 @@ public class App {
     //todo Task 5
     public void swapTwoNumbers(){
         Scanner scanner= new Scanner(System.in);
-        int x = scanner.nextInt();
-        int y = scanner.nextInt();
         System.out.println("Before Swap:");
-        System.out.println("x: "+x);
-        System.out.println("y: "+y);
+        int x = scanner.nextInt();
+        System.out.print("x: ");
+        int y = scanner.nextInt();
+        System.out.print("y: ");
         x=x+y;
         y=x-y;
         x=x-y;
@@ -105,13 +105,13 @@ public class App {
         Scanner scanner = new Scanner(System.in);
         int n1 = scanner.nextInt();
         int n2 = scanner.nextInt();
-        System.out.println("n1: "+n1);
-        System.out.println("n2: "+n2);
+        System.out.print("n1: ");
+        System.out.print("n2: ");
         if(n1>n2){
             System.out.println("n1 > n2");
         }
         if(n1<n2){
-            System.out.println("n1 < n2");
+            System.out.println("n2 > n1");
         }
         if(n1==n2){
             System.out.println("n1 == n2");
@@ -120,7 +120,20 @@ public class App {
 
     //todo Task 7
     public void ratingSalesPerson(){
-        // input your solution here
+        System.out.print("Enter annual Revenue: ");
+        Scanner scanner = new Scanner(System.in);
+        int i = scanner.nextInt();
+        if(i<0 || i>=100000){
+            System.out.println("Invalid Revenue");
+        } else if (i >= 0 && i < 20000) {
+            System.out.println("Poor Sales Revenue");
+        } else if(i>=20000 && i<50000){
+            System.out.println("Average Sales Revenue");
+        } else if(i>=50000 && i<80000){
+            System.out.println("Good Sales Revenue");
+        } else if(i>=80000 && i<10000){
+            System.out.println("Excellent Sales Revenue");
+        }
     }
 
     //todo Task 8
