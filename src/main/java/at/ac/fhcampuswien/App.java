@@ -1,6 +1,5 @@
 package at.ac.fhcampuswien;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class App {
@@ -138,7 +137,33 @@ public class App {
 
     //todo Task 8
     public void getCommissionRate(){
-        // input your solution here
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter CommissionClass: ");
+        int i = scanner.nextInt();
+        double d = 0.00;
+        System.out.print("Your Commission Rate was set to ");
+        switch(i){
+            case 1:
+                d=0.01;
+                System.out.println(d);
+                break;
+            case 2:
+                d=0.02;
+                System.out.println(d);
+                break;
+            case 3:
+                d=0.03;
+                System.out.println(d);
+                break;
+            case 4:
+                d=0.04;
+                System.out.println(d);
+                break;
+            default:
+                System.out.println(d);
+                break;
+        }
+
     }
 
     //todo Task 9
