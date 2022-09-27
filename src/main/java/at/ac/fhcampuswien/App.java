@@ -172,7 +172,14 @@ public class App {
 
     //todo Task 9
     public void leapyear(){
-        // input your solution here
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Year: ");
+        int i = scanner.nextInt();
+        if(i%4==0 && i%400==0){
+            System.out.println("Leapyear");
+        }else{
+            System.out.println("Not a Leapyear");
+        }
     }
 
     //todo Task 10
