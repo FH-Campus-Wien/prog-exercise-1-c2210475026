@@ -79,10 +79,10 @@ public class App {
     public void swapTwoNumbers(){
         Scanner scanner= new Scanner(System.in);
         System.out.println("Before Swap:");
-        int x = scanner.nextInt();
         System.out.print("x: ");
-        int y = scanner.nextInt();
+        int x = scanner.nextInt();
         System.out.print("y: ");
+        int y = scanner.nextInt();
         x=x+y;
         y=x-y;
         x=x-y;
@@ -186,6 +186,10 @@ public class App {
     public void transposedNumbers(){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Number: ");
+        String input = scanner.next();
+        StringBuilder stb = new StringBuilder(input);
+        String output = stb.reverse().toString();
+        /*
         int input = scanner.nextInt();
         int output =0;
         for(int i=0;i<3;i++){
@@ -193,6 +197,7 @@ public class App {
             output=output*10+m;
             input=input/10;
         }
+         */
         System.out.println(output);
 
     }
